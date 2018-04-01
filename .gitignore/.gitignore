@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main () 
+{
+	float x;
+	float z;
+	float j;
+	printf("Que valor le quieres dar a x? \n");
+	scanf("%f" ,&x);
+	printf("valor de x es: %f \n",x);
+	printf("Que valor le quieres dar a z? \n");
+	scanf("%f",&z);
+	printf("valor de z es: %f \n",z);
+	j = z * x;
+	printf("%f * %f = %f \n \n",x,z,j);
+	system ("pause");
+	return 0;
+}
