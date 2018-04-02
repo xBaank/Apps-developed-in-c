@@ -1,21 +1,105 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+//1 es multiplicar
+//2 es dividir
+//3 es sumar
+//4 es restar
+//5 es raices
+//6 son potencias
 
 
-
-int main () 
-{
-	float x;
+int main() {
+	int x;
+	printf ("Que quiere hacer? \n Pon 1 para multiplicar \n Pon 2 para dividir \n Pon 3 para sumar \n Pon 4 para restar \n Pon 5 para raiz \n Pon 6 para potencia \n");
+	scanf ("%i",&x);
+	if (x == 1) {
+    float x;
 	float z;
-	float j;
-	printf("Que valor le quieres dar a x? \n");
+    float j;
+	printf("Que valor quieres multiplicar? \n");
 	scanf("%f" ,&x);
-	printf("valor de x es: %f \n",x);
-	printf("Que valor le quieres dar a z? \n");
+	printf("valor es: %f \n",x);
+	printf("Que otro valor quieres multiplicar? \n");
 	scanf("%f",&z);
-	printf("valor de z es: %f \n",z);
+	printf("valor es: %f \n",z);
 	j = z * x;
 	printf("%f * %f = %f \n \n",x,z,j);
 	system ("pause");
-	return 0;
+    return 0;
+		}
+		if (x == 2) {
+			float x;
+	    float z;
+        float j;
+       	printf("Que valor quieres dar al dividendo? \n");
+    	scanf("%f" ,&x);
+    	printf("valor es: %f \n",x);
+    	printf("Que otro valor quieres dar al divisor? \n");
+    	scanf("%f",&z);
+    	printf("valor es: %f \n",z);
+      	j = x / z;
+    	printf("%f / %f = %f \n \n",x,z,j);
+    	system ("pause");
+        return 0;
+			
+		}
+		if (x == 3) {
+			float x;
+    	float z;
+        float j;
+    	printf("Que valor quieres sumar? \n");
+    	scanf("%f" ,&x);
+     	printf("valor es: %f \n",x);
+    	printf("Que otro valor quieres sumar? \n");
+    	scanf("%f",&z);
+    	printf("valor es: %f \n",z);
+    	j = z + x;
+    	printf("%f + %f = %f \n \n",x,z,j);
+    	system ("pause");
+        return 0;
+		}
+		if (x == 4) {
+		float x;
+    	float z;
+        float j;
+    	printf("Que valor quieres restar? \n");
+    	scanf("%f" ,&x);
+    	printf("valor es: %f \n",x);
+     	printf("Cuanto quieres que le reste? \n");
+    	scanf("%f",&z);
+    	printf("valor es: %f \n",z);
+    	j = x - z;
+    	printf("%f - %f = %f \n \n",x,z,j);
+    	system ("pause");
+        return 0;
+		}
+		if (x == 5) {
+		float x;
+        float j;
+     	printf("Que valor quieres? \n");
+    	scanf("%f" ,&x);
+    	printf("valor es: %f \n",x);
+    	j = sqrt (x);
+    	printf("raiz de %f = %f \n \n",x,j);
+    	system ("pause");
+        return 0;
+		}
+		if (x == 6) {
+		
+		float x;
+     	float y;
+    	float j;
+    	printf("De que número quieres la potencia? \n");
+    	scanf("%f",&x);
+     	printf("el numero es %f \n",x);
+    	printf("A cuanto lo quieres elevar? \n");
+    	scanf("%f",&y);
+    	printf("el numero es %f \n",y);
+    	j = pow (x,y) ;
+    	printf("el numero %f^%f es = %f \n",x,y,j);
+    	system ("pause");
+    	return 0;
+    }
+		
 }
